@@ -1,0 +1,45 @@
+html {
+    height: 100%;
+}
+
+body {
+    display: -webkit-box;	/* OLD: Safari, iOS, Android, older WebKit browsers */
+    display: -moz-box;		/* OLD: Firefox (buggy) */
+    display: -webkit-flex;	/* NEW, Chrome 21-28, Safari 6.1+ */
+    display: flex;			/* NEW: IE11, Chrome 29+, Opera 12.1+, Firefox 22+ */
+
+	/* These props center the elements inside along the "cross-axis" (vertical by default). */
+    -webkit-box-align: center;
+    -moz-box-align: center;	/* OLD... */
+    -webkit-align-items: center;
+    align-items: center;
+
+	/* There props center the elements inside along the main axis (horizontal by default). */
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+
+    margin: 0;
+    height: 100%;
+    width: 100%; /* needed for Firefox */
+
+    /* To aligh the elements along the vertical axis. */
+    /* This is a shorthand for flex-direction and flex-wrap, two values are needed. */
+    /* flex-flow: column nowrap; */
+}
+
+/* Set 10rem height to h1 and center the anonymous box (text node) inside using flex. */
+h1 {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+
+    height: 10rem;
+}
