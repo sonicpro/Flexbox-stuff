@@ -29,17 +29,23 @@ body {
     /* flex-flow: column nowrap; */
 }
 
-/* Set 10rem height to h1 and center the anonymous box (text node) inside using flex. */
+/* Set 10rem height to h1 and steretch the div box inside using flex. */
 h1 {
     display: -webkit-box;
     display: -moz-box;
     display: -webkit-flex;
     display: flex;
 
-    -webkit-box-align: center;
-    -moz-box-align: center;
-    -webkit-align-items: center;
-    align-items: center;
+    /* stretch is the default align-items property, just make it explicit. */
+    -webkit-box-align: stretch;
+    -moz-box-align: stretch;
+    -webkit-align-items: stretch;
+    align-items: stretch;
 
     height: 10rem;
+}
+
+h1 > div {
+    background-color: lightsalmon;
+    border-color: salmon;
 }
