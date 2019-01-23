@@ -24,7 +24,7 @@ body {
     height: 100%;
     width: 100%; /* needed for Firefox */
 
-    /* To aligh the elements along the vertical axis. */
+    /* To align the elements along the vertical axis. */
     /* This is a shorthand for flex-direction and flex-wrap, two values are needed. */
     /* flex-flow: column nowrap; */
 }
